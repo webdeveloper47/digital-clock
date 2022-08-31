@@ -1,0 +1,102 @@
+
+
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*-------------------------
+      General Styles
+  --------------------------*/
+  
+  html {
+    overflow: hidden;
+  }
+  
+  body {
+    font: 15px/1.3 Arial, sans-serif;
+    color:black;
+    z-index: 1;
+    background: #01350c;
+  }
+  
+  a,
+  a:visited {
+    outline: none;
+    color: #0f0f0f;
+  
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  section,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  
+  /*-------------------------
+      The clocks
+  --------------------------*/
+  
+  #clock {
+    width: 370px;
+    padding: 40px;
+    margin: 100px auto 60px;
+    position: relative;
+  }
+  
+  #clock:after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    border-radius: 100%;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 2px;
+    z-index: -1;
+  }
+  
+  #clock .display {
+    text-align: center;
+    padding: 7px;
+    border-radius: 6px;
+    position: relative;
+    height: 60px;
+  }
+  
+  /*-------------------------
+      Dark color theme
+  --------------------------*/
+  
+  #clock.dark {
+    background-color: rgb(160, 173, 173);
+    color: white;
+    border-radius: 20px;
+  }
+  
+  #clock.dark::after {
+    box-shadow: 0 4px 10px rgba(112, 69, 69, 0.3);
+  }
+  #clock.dark .display {
+    background-color: rgb(31, 29, 29);
+    box-shadow: 0 1px 1px white inset, 0 1px 1px white;
+    border-radius:40px ;
+  }
+  h1#time {
+    display: inline-block;
+    font-size: 40px;
+  }
+  
+
+
+ 
+
